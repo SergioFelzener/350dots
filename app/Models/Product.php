@@ -9,5 +9,13 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name' ];
+    protected $fillable = ['name', 'description', 'country', 'local', 'date', 'time', 'interest', 'lat', 'long', 'status', 'slug'];
+
+    // public function getSlugOptions() : SlugOptions {
+
+    //     return SlugOptions::create()->generateSlugsFrom('name')->saveSlugsTo('slug');
+
+    // }
+
+
 }
